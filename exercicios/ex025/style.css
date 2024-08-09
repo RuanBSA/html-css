@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+    
+}
+
+#nome {
+    margin-top: 20px;
+}
