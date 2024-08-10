@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Nome do usuario</legend>
             <div>
-                <label for="nome">Nome:</label> <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" minlength="4">
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name" minlength="4" maxlength="10" required placeholder="Nome do usuario" slot="10">
             </div>
             <div>
-                <label for="senha">Senha:</label> <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="current-password" minlength="8">
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" minlength="5" max="30" required autocomplete="name">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>informações do usuario</legend>
+            <div>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" placeholder="insira seu e-mail" required autocomplete="email">
             </div>
             <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="limpar">
+                <label for="isenha">Senha</label>
+                <input type="password" name="Senha" id="isenha" required placeholder="Digite sua senha" minlength="8" autocomplete="current-password">
             </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <input type="radio" name="sexo" id="imasculino" value="M" required>
+                <label for="imasculino">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="ifeminino" value="F">
+                <label for="ifeminino">Feminino</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
     </form>
 </body>
 </html>
