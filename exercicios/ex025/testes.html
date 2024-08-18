@@ -4,45 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 100vw;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: lightgray;
+
+        }
+
+        form {
+            text-align: center;
+            background-color: blueviolet;
+            margin: auto;
+            padding: 20px;
+            width: 200px;
+            margin-top: 20px;
+
+            border: 1px solid black;
+            border-radius: 5px 5px;
+            box-shadow: 2px 2px 4px;
+        }
+
+        .enviar {
+            padding: 3px;
+            margin: 8px;
+            
+        }
+    </style>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Nome do usuario</legend>
-            <div>
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" autocomplete="name" minlength="4" maxlength="10" required placeholder="Nome do usuario" slot="10">
-            </div>
-            <div>
-                <label for="isobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" minlength="5" max="30" required autocomplete="name">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>informações do usuario</legend>
-            <div>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" placeholder="insira seu e-mail" required autocomplete="email">
-            </div>
-            <div>
-                <label for="isenha">Senha</label>
-                <input type="password" name="Senha" id="isenha" required placeholder="Digite sua senha" minlength="8" autocomplete="current-password">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Sexo</legend>
-            <div>
-                <input type="radio" name="sexo" id="imasculino" value="M" required>
-                <label for="imasculino">Masculino</label>
-                <br>
-                <input type="radio" name="sexo" id="ifeminino" value="F">
-                <label for="ifeminino">Feminino</label>
-            </div>
-        </fieldset>
-        <div>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="informacoes">
+            <label for="inome">Nome: </label>
+            <input type="text" name="Nome" id="inome" autocomplete="name" maxlength="11" required>
+        </div>
+
+        <div class="informacoes">
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome" autocomplete="username" maxlength="22" required>
+        </div>
+
+        <div class="informacoes">
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </div>
+
+        <div class="informacoess">
+            <label for="ipassword">Senha: </label>
+            <input type="password" name="password" id="ipassword" autocomplete="current-password" minlength="8" required>
+        </div>
+
+        <div class="enviar">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </div>
     </form>
+
+    <div class="container">
+        <form action="">
+                <select name="select" id="itexto">
+                    <optgroup selected>ESCOLHA</optgroup>
+                    <option value="" selected>Teste</option>
+                    <option value="1" >Primeiro</option>
+                    <option value="2">Segundo</option>
+                    <option value="3">Terceiro</option>
+                </select>
+        </form>
+    </div>
 </body>
 </html>
