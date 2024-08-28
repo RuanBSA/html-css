@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#yt {
+    display: flex;
+    justify-content: center;
+}
+
+#ibusca {
+   /*margin: auto;*/
+
+   display: none;
+}
+
+.paragrafos {
+    text-align: justify;
+}

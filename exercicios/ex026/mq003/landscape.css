@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    
+
+    text-align: center;
+}
+
+#ibusca {
+    margin: auto;
+    margin-top: 20px;
+}
+
+main {
+    background-color: lightgray;
+    margin: auto;
+    width: 80vw;
+    height: 50vh;
+}
+
+main article {
+   width: 60vw;
+}
